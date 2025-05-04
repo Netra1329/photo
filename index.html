@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Features</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .feature {
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            background-color: #f1f8fe;
+            transform: translateY(-3px);
+        }
+
+        .feature h3 {
+            color: #3498db;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .feature p {
+            margin: 0;
+            color: #555;
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Features that make Design simply awesome</h1>
+        <p class="subtitle">Not sure if Design is for you? Check out few of the key features!</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>Vectors</h3>
+                <p>Use SVGs that always stay crisp and you can change the color as you go.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Effects</h3>
+                <p>Add some fancy elements to your designs by adding interactive scroll effects or animations.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Responsive from the start</h3>
+                <p>Have full control over mobile layouts. Move the breakpoints where it's best for the content.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Forms</h3>
+                <p>Add forms to collect your visitors' emails directly with Mailchimp</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Paste CSS</h3>
+                <p>Copy CSS from Photoshop or Sketch or even your text editor and paste it.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Library</h3>
+                <p>Choose from presets or create your own collections of elements to re-use it later in your projects.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
